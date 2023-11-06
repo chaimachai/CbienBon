@@ -10355,19 +10355,19 @@ header .filtre {
   height: 100%;
 }
 
-.about {
+#about {
   background-image: url("/../../../public/img/about-bg.jpg");
   background-attachment: fixed;
 }
-.about #filtre2 {
+#about #filtre2 {
   background-color: rgba(0, 0, 0, 0.7);
   width: 100vw;
 }
-.about img {
+#about img {
   width: 20vw;
   border: 4px solid rgb(59, 57, 54);
 }
-.about img:hover {
+#about img:hover {
   animation: image_about 1s forwards;
 }
 @keyframes image_about {
