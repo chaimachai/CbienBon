@@ -10321,6 +10321,16 @@ readers do not read off random characters that represent icons */
 nav {
   background-color: rgba(0, 0, 0, 0.7);
 }
+nav ul .nav-link.active {
+  color: rgb(217, 186, 133) !important;
+}
+nav ul .nav-link:hover {
+  color: rgb(217, 186, 133) !important;
+}
+nav button:hover {
+  color: white !important;
+  background-color: rgb(205, 164, 94) !important;
+}
 
 header {
   background-image: url("/../../../public/img/hero-bg.jpg");
