@@ -7,61 +7,81 @@
     <link rel="stylesheet" href="./public/css/app.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top bg-danger">
-        <div class="container-fluid justify-content-around">
-            <a class="navbar-brand text-light" href="#">CBIENBON</a>
-            <div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between" id="navbarText">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Chefs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Contact</a>
-                        </li>
-                    </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container-fluid justify-content-around">
+                <a class="navbar-brand text-light" href="#">CBIENBON</a>
+                <div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Chefs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <button class="rounded-4 border-warning bg-transparent text-light d-none d-lg-block">BOOK A TABLE</button>
             </div>
-            <button class="rounded-4 border-warning bg-transparent text-light d-none d-lg-block">BOOK A TABLE</button>
-        </div>
-    </nav>
-    <header class="d-flex align-items-center justify-content-center">
-        <div class="container p-5 row">
-            <div class="col">
+        </nav>
+        <div class="d-flex align-items-center justify-content-center">
+            <div class="container p-5 row">
                 <div class="col">
-                    <h1 class="text-light">Welcome to <span class="text-warning">CBIENBON</span></h1>
-                    <h2>Delivering great food for more than 18 years!</h2>
+                    <div class="col">
+                        <h1 class="text-light">Welcome to <span class="text-warning">CBIENBON</span></h1>
+                        <h2 class="text-light">Delivering great food for more than 18 years!</h2>
+                    </div>
+                    <div class="col">
+                        <button class="rounded-4 border-none border-warning bg-transparent text-light">OUR MENU</button>
+                        <button class="rounded-4 border-warning bg-transparent text-light">BOOK A TABLE</button>
+                    </div>
                 </div>
-                <div class="col">
-                    <button class="rounded-4 border-none border-warning bg-transparent text-light">OUR MENU</button>
-                    <button class="rounded-4 border-warning bg-transparent text-light">BOOK A TABLE</button>
+                <div class="col d-flex justify-content-center align-items-center">
+                    <label class="bg-warning text-light" for="video" id="label"><i class="fa fa-play"></i>
+                    </label>
                 </div>
             </div>
-            <div class="col">
-                <button class="rounded-4 border-warning-subtle bg-warning text-light"><i class="fa fa-play"></i></button>
-            </div>
+    
+            <input type="checkbox" id="video">
+            <label class="filtre" for="videofin">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ra4wk0JE-q0?si=AM-RMLDy_qQRQSPm"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen id="video1"></iframe>
+            </label>
         </div>
     </header>
     <main>
+        <section class="about">
+            <div class="container row">
+                <div class="col">
+                </div>
+                <div class="col">
+                    <img src="./public/img/about.jpg" alt="">
+                </div>
+            </div>
+        </section>
     </main>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
