@@ -10363,8 +10363,16 @@ header .filtre {
   background-color: rgba(0, 0, 0, 0.7);
   width: 100vw;
 }
-.about #filtre2 i {
-  color: rgb(205, 164, 94);
+.about img {
+  width: 20vw;
+}
+.about img:hover {
+  animation: image_about 1s;
+}
+@keyframes image_about {
+  to {
+    width: 22vw;
+  }
 }
 
 /*!
