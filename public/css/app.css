@@ -10355,6 +10355,18 @@ header .filtre {
   height: 100%;
 }
 
+.about {
+  background-image: url("/../../../public/img/about-bg.jpg");
+  background-attachment: fixed;
+}
+.about #filtre2 {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+}
+.about #filtre2 i {
+  color: rgb(205, 164, 94);
+}
+
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
