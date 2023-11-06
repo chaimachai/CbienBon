@@ -4,7 +4,12 @@ header
     .filtre1
         background-color: rgba(0,0,0, 0.7)
         height: 100%
-        
+    .div_label
+        width: 7rem
+        height: 7rem
+        border-radius: 50%
+        background-color: rgba(205,164,94,0.2)
+        overflow: hidden
     #label
         width: 6rem
         height: 6rem
@@ -13,14 +18,15 @@ header
         justify-content: center
         align-items: center
         font-size: 4rem
-        overflow: hidden
-        // border: 100px rgba(205,164,94,0.1) solid !important
-    #label:hover
-        animation: label_header 1s !important
+        .fa-play
+            color: white
+    #label:hover .fa-play
+        animation: label_header 1s
+
     input
         display: none
     .filtre
-        background-color: rgba(0,0,0, 0.7)
+        background-color: rgba(0,0,0, 0.9)
         width: 100%
         height: 100%
         position: absolute
@@ -30,9 +36,8 @@ header
         justify-content: center
         align-items: center
     button:hover
-        color: white !important 
         background-color: $warning !important
 @keyframes label_header
     to
-        // font-size: 20rem
-        color: $warning !important
+        font-size: 20rem
+        color: $warning

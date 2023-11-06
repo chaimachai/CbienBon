@@ -10328,8 +10328,7 @@ nav ul .nav-link:hover {
   color: rgb(217, 186, 133) !important;
 }
 nav button:hover {
-  color: white !important;
-  background-color: rgb(205, 164, 94) !important;
+  background-color: rgb(205, 164, 94);
 }
 
 header {
@@ -10340,6 +10339,13 @@ header .filtre1 {
   background-color: rgba(0, 0, 0, 0.7);
   height: 100%;
 }
+header .div_label {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: rgba(205, 164, 94, 0.2);
+  overflow: hidden;
+}
 header #label {
   width: 6rem;
   height: 6rem;
@@ -10348,16 +10354,18 @@ header #label {
   justify-content: center;
   align-items: center;
   font-size: 4rem;
-  overflow: hidden;
 }
-header #label:hover {
-  animation: label_header 1s !important;
+header #label .fa-play {
+  color: white;
+}
+header #label:hover .fa-play {
+  animation: label_header 1s;
 }
 header input {
   display: none;
 }
 header .filtre {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -10369,13 +10377,13 @@ header #video:checked + .filtre {
   align-items: center;
 }
 header button:hover {
-  color: white !important;
   background-color: rgb(205, 164, 94) !important;
 }
 
 @keyframes label_header {
   to {
-    color: rgb(205, 164, 94) !important;
+    font-size: 20rem;
+    color: rgb(205, 164, 94);
   }
 }
 #about {
