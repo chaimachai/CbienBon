@@ -10320,6 +10320,7 @@ readers do not read off random characters that represent icons */
 
 nav {
   background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1 !important;
 }
 nav ul .nav-link.active {
   color: rgb(217, 186, 133) !important;
@@ -10345,6 +10346,9 @@ header .div_label {
   border-radius: 50%;
   background-color: rgba(205, 164, 94, 0.2);
   overflow: hidden;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 header #label {
   width: 6rem;
@@ -10370,6 +10374,13 @@ header .filtre {
   height: 100%;
   position: absolute;
   display: none;
+  z-index: 2 !important;
+}
+header .filtre label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
 }
 header #video:checked + .filtre {
   display: flex !important;
