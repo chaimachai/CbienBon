@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./public/css/app.css">
 </head>
 <body>
-    <header>
+    <header class="d-flex align-items-center">
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid justify-content-around">
                 <a class="navbar-brand text-light" href="#">CBIENBON</a>
@@ -45,22 +45,22 @@
                 <button class="rounded-4 border-warning bg-transparent text-light d-none d-lg-block p-4 pb-1 pt-1">BOOK A TABLE</button>
             </div>
         </nav>
-        <div class="d-flex align-items-center justify-content-center">
+        <div class="filtre1 container-fluid d-flex align-items-center justify-content-center">
             <div class="container p-5 row">
                 <div class="col">
                     <div class="col">
                         <h1 class="text-light">Welcome to <span class="text-warning">CBIENBON</span></h1>
-                        <h2 class="text-light">Delivering great food for more than 18 years!</h2>
+                        <h2 class="text-light mb-5">Delivering great food for more than 18 years!</h2>
                     </div>
                     <div class="col">
-                        <button class="rounded-4 border-none border-warning bg-transparent text-light">OUR MENU</button>
-                        <button class="rounded-4 border-warning bg-transparent text-light">BOOK A TABLE</button>
+                        <button class="rounded-4 border-none border-warning bg-transparent text-light p-4 pb-1 pt-1">OUR MENU</button>
+                        <button class="rounded-4 border-warning bg-transparent text-light p-4 pb-1 pt-1">BOOK A TABLE</button>
                     </div>
                 </div>
-                <div class="col d-flex justify-content-center align-items-center">
-                    <label class="bg-warning text-light" for="video" id="label"><i class="fa fa-play"></i>
-                    </label>
-                </div>
+                <label class="bg-warning text-light" for="video" id="label"><i class="fa fa-play"></i>
+                </label>
+                <!-- <div class="col d-flex justify-content-center align-items-center">
+                </div> -->
             </div>
     
             <input type="checkbox" id="video">
@@ -75,63 +75,79 @@
     <main>
         <section id="about">
             <div class="container-fluid row text-light p-5" id="filtre2">
-                <div class="col">
-                    <h2>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div>
-                        <i class="fa-regular fa-circle-check text-warning"></i>
-                        <span>Ullamoco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                <div class="container row">
+                    <div class="col">
+                        <h2>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div>
+                            <i class="fa-regular fa-circle-check text-warning"></i>
+                            <span>Ullamoco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-circle-check text-warning"></i>
+                            <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-circle-check text-warning"></i>
+                            <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur/p>
+                        </div>
+                        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptaye velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                     </div>
-                    <div>
-                        <i class="fa-regular fa-circle-check text-warning"></i>
-                        <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span>
+                    <div class="col">
+                        <img src="./public/img/about.jpg" alt="img about">
                     </div>
-                    <div>
-                        <i class="fa-regular fa-circle-check text-warning"></i>
-                        <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur/p>
-                    </div>
-                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptaye velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                 </div>
-                <div class="col">
-                    <img src="./public/img/about.jpg" alt="img about">
+                </div>
+        </section>
+        <section class="why_us bg-black text-light p-5">
+            <div class="container">
+                <div>
+                    <p>Why us</p>
+                    <h2 class="text-warning mb-5">Why Choose Our Restaurant</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card bg-info text-light p-4 rounded-0">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">01</h5>
+                                <p class="card-title">Lorem Ipsum</p>
+                                <p class="card-text">Ulamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Et consectetur ducimus vero placeat</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card bg-info text-light p-4 rounded-0">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">02</h5>
+                                <p class="card-title">Reppelat Nihil</p>
+                                <p class="card-text">Dolorem est fugiat occaecat volupate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card bg-info text-light p-4 rounded-0">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">03</h5>
+                                <p class="card-title">Ad ad velit qui</p>
+                                <p class="card-text">Dolorem est fugiat occaecat volupate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="why_us bg-black text-light">
-            <div>
-                <p>Why us</p>
-                <h2>Why Choose Our Restaurant</h2>
-            </div>
-            <div class="row bg-black">
-                <div class="col-sm-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">01</h5>
-                            <p class="card-title">Lorem Ipsum</p>
-                            <p class="card-text">Ulamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Et consectetur ducimus vero placeat</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">02</h5>
-                            <p class="card-title">Reppelat Nihil</p>
-                            <p class="card-text">Dolorem est fugiat occaecat volupate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">03</h5>
-                            <p class="card-title">Ad ad velit qui</p>
-                            <p class="card-text">Molestiar officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolore culpa quam modi? Accusantium earum sed illo eveniet officia inventore sit magni soluta laudantium, laborum vero illum necessitatibus. Tenetur, ut.
+            Accusantium debitis tempora harum ad, distinctio omnis saepe molestiae odio assumenda praesentium ducimus, eius quo sint temporibus, earum nisi dignissimos necessitatibus accusamus voluptates ipsa suscipit quas consequuntur? Perferendis, quibusdam totam.
+            Veniam iure, beatae hic voluptate molestiae non alias illum adipisci temporibus quidem incidunt odit suscipit iusto aperiam officia a ex et doloremque sunt soluta magnam! Harum odio molestiae magnam sapiente?
+            Nemo minus assumenda deserunt, numquam unde animi repellendus et amet ea doloremque nam reiciendis aliquid pariatur error atque voluptate nulla nihil ex in placeat sunt eveniet? Mollitia debitis doloremque iure?
+            Enim beatae esse placeat ipsa reiciendis sequi sunt autem adipisci minima mollitia culpa maxime tempora, officia, illo cupiditate debitis deleniti numquam odio, perferendis possimus perspiciatis impedit at. Libero, magni natus!
+            Voluptatem eum consequatur fugiat nobis fugit expedita veniam assumenda, corporis tempora deserunt repellendus voluptas aspernatur ipsam quas repudiandae cumque dolore explicabo iure. Molestias eligendi voluptas inventore voluptates alias, quo soluta.
+            Sunt itaque iure, adipisci quod quidem debitis laudantium veniam aspernatur pariatur cumque autem similique explicabo tempore porro molestias repudiandae delectus animi numquam voluptatem? Doloremque tempora reiciendis iusto suscipit ducimus dignissimos.
+            Minima assumenda quos corporis labore aliquid dicta sequi in asperiores soluta est ad voluptatibus veritatis nam accusantium possimus explicabo odio, numquam, commodi aut excepturi reprehenderit repellat doloribus exercitationem. Pariatur, assumenda.
+            Dolores alias ratione maxime, accusamus voluptatem dolore! Necessitatibus molestias eligendi deleniti aut alias deserunt voluptates ea eos repellat fuga recusandae delectus facilis nobis blanditiis veritatis iste rerum accusantium, provident fugiat?
+            Libero unde, reiciendis laboriosam sunt dolor voluptatem rerum, distinctio iusto perspiciatis aspernatur consectetur quibusdam, molestias ex perferendis veritatis rem tempore officiis accusantium sint excepturi at. Eligendi iusto possimus nemo iste.
         </section>
     </main>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
