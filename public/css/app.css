@@ -10348,6 +10348,10 @@ header #label {
   justify-content: center;
   align-items: center;
   font-size: 4rem;
+  overflow: hidden;
+}
+header #label:hover {
+  animation: label_header 1s !important;
 }
 header input {
   display: none;
@@ -10356,8 +10360,6 @@ header .filtre {
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100%;
-}
-header .filtre {
   position: absolute;
   display: none;
 }
@@ -10371,15 +10373,20 @@ header button:hover {
   background-color: rgb(205, 164, 94) !important;
 }
 
+@keyframes label_header {
+  to {
+    color: rgb(205, 164, 94) !important;
+  }
+}
 #about {
   background-image: url("/../../../public/img/about-bg.jpg");
   background-attachment: fixed;
 }
-#about #filtre2 {
+#about .filtre2 {
   background-color: rgba(0, 0, 0, 0.7);
 }
 #about img {
-  width: 20vw;
+  width: 30vw;
   border: 4px solid rgb(59, 57, 54);
 }
 #about img:hover {
@@ -10387,7 +10394,7 @@ header button:hover {
 }
 @keyframes image_about {
   to {
-    width: 22vw;
+    width: 32vw;
   }
 }
 
