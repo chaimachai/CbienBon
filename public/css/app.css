@@ -10455,6 +10455,9 @@ header button:hover {
 #book input:focus, #book textarea:focus {
   color: rgb(205, 164, 94) !important;
 }
+#book button:hover {
+  background-color: rgb(12, 11, 9) !important;
+}
 
 body hr {
   width: 10rem;
