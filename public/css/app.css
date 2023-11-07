@@ -10462,11 +10462,21 @@ header button:hover {
 #gallery .col-3 {
   background-position: center;
 }
+#gallery .anim {
+  overflow: hidden;
+  width: 24vw;
+  margin: 0;
+  padding: 0;
+}
 #gallery .col-3:hover {
   animation: images 2s forwards;
 }
 
-@keyframes images;
+@keyframes images {
+  to {
+    transform: scale(1.25);
+  }
+}
 body hr {
   width: 10rem;
 }
