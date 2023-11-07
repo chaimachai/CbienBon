@@ -10459,6 +10459,14 @@ header button:hover {
   background-color: rgb(12, 11, 9) !important;
 }
 
+#gallery .col-3 {
+  background-position: center;
+}
+#gallery .col-3:hover {
+  animation: images 2s forwards;
+}
+
+@keyframes images;
 body hr {
   width: 10rem;
 }
