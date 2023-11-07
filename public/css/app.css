@@ -10328,7 +10328,7 @@ nav ul .nav-link.active {
 nav ul .nav-link:hover {
   color: rgb(217, 186, 133) !important;
 }
-nav button:hover {
+nav button a:hover {
   background-color: rgb(205, 164, 94);
 }
 
@@ -10431,6 +10431,33 @@ header button:hover {
 }
 #menu i1:checked + c2 {
   color: red;
+}
+
+#events .carousel-indicators {
+  margin-bottom: -50px;
+}
+#events .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+#events .carousel-indicators .active {
+  background-color: rgb(205, 164, 94) !important;
+}
+#events h3:nth-of-type(2), #events .h3:nth-of-type(2) {
+  width: fit-content;
+  border-bottom: 2px solid rgb(205, 164, 94);
+}
+
+#book input, #book textarea {
+  border: rgb(71, 66, 55) 1px solid;
+}
+#book input:focus, #book textarea:focus {
+  color: rgb(205, 164, 94) !important;
+}
+
+.monials hr {
+  width: 10rem;
 }
 
 /*!
