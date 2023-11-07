@@ -10434,6 +10434,14 @@ header button:hover {
 #menu .col-6 hr {
   border-top: 1px dashed white;
 }
+#menu button {
+  color: white;
+  border: none;
+  background-color: rgb(26, 24, 20);
+}
+#menu .nav-tabs .active {
+  color: rgb(205, 164, 94) !important;
+}
 
 #events {
   background-image: url("/../../../public/img/events-bg.jpg");
