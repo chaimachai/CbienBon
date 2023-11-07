@@ -10422,6 +10422,17 @@ header button:hover {
   background-color: rgb(205, 164, 94) !important;
 }
 
+#menu a {
+  text-decoration: none;
+  color: white;
+}
+#menu .list-group-item a:hover {
+  color: rgb(205, 164, 94);
+}
+#menu i1:checked + c2 {
+  color: red;
+}
+
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
