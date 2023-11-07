@@ -10509,17 +10509,20 @@ header button:hover {
   height: 100%;
   opacity: 0;
 }
+#chefs .col-4 .texte .logo {
+  opacity: 0;
+}
 #chefs .col-4 .texte:hover {
-  animation: chefs 1s forwards;
+  animation: chefs 0.5s forwards;
 }
 #chefs .col-4 .texte:hover p {
-  animation: chef2 1s forwards;
+  animation: chef2 0.5s forwards;
 }
 #chefs .col-4 .texte:hover h6, #chefs .col-4 .texte:hover .h6 {
-  animation: chef2 1s forwards;
+  animation: chef2 0.5s forwards;
 }
 #chefs .col-4 .texte:hover .logo {
-  animation: chef2 1s forwards 0.1s;
+  animation: chef2 0.5s forwards 0.1s;
 }
 
 @keyframes chefs {
@@ -10530,8 +10533,40 @@ header button:hover {
 @keyframes chef2 {
   to {
     transform: translateY(-10px);
+    opacity: 1;
   }
 }
+#contact input, #contact textarea {
+  border: rgb(71, 66, 55) 1px solid;
+}
+#contact input:focus, #contact textarea:focus {
+  color: rgb(205, 164, 94) !important;
+}
+#contact button:hover {
+  background-color: rgb(12, 11, 9) !important;
+}
+#contact .font {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact .font i {
+  font-size: 1rem;
+}
+#contact .font + div {
+  margin: 1rem;
+}
+#contact .font + div p {
+  margin: 0;
+  margin-left: 1rem;
+}
+#contact iframe {
+  width: 100%;
+}
+
 body hr {
   width: 10rem;
 }
