@@ -10509,7 +10509,29 @@ header button:hover {
   height: 100%;
   opacity: 0;
 }
+#chefs .col-4 .texte:hover {
+  animation: chefs 1s forwards;
+}
+#chefs .col-4 .texte:hover p {
+  animation: chef2 1s forwards;
+}
+#chefs .col-4 .texte:hover h6, #chefs .col-4 .texte:hover .h6 {
+  animation: chef2 1s forwards;
+}
+#chefs .col-4 .texte:hover .logo {
+  animation: chef2 1s forwards 0.1s;
+}
 
+@keyframes chefs {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes chef2 {
+  to {
+    transform: translateY(-10px);
+  }
+}
 body hr {
   width: 10rem;
 }

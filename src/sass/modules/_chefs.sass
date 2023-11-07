@@ -22,7 +22,21 @@
             height: 100%
             opacity: 0
             
+        .texte:hover
+            animation: chefs 1s forwards
+        .texte:hover p
+            animation: chef2 1s forwards
+        .texte:hover h6
+            animation: chef2 1s forwards 
+        .texte:hover .logo
+            animation: chef2 1s forwards 0.1s
+@keyframes chefs
+    to
+        opacity: 1
 
+@keyframes chef2
+    to
+        transform: translateY(-10px)
 
 
 
