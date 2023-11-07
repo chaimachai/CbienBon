@@ -10422,15 +10422,17 @@ header button:hover {
   background-color: rgb(205, 164, 94) !important;
 }
 
-#menu a {
-  text-decoration: none;
-  color: white;
+#menu .col-6 img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  margin: 0 1rem;
 }
-#menu .list-group-item a:hover {
-  color: rgb(205, 164, 94);
+#menu .col-6 p {
+  margin: 0 0.5rem;
 }
-#menu i1:checked + c2 {
-  color: red;
+#menu .col-6 hr {
+  border-top: 1px dashed white;
 }
 
 #events {
@@ -10516,24 +10518,24 @@ header button:hover {
   margin: 0 0.2rem;
 }
 #chefs .col-4 .texte:hover {
-  animation: chefs 0.5s forwards;
+  animation: opacite 0.5s forwards;
 }
 #chefs .col-4 .texte:hover p {
-  animation: chef2 0.5s forwards;
+  animation: deplacement 0.5s forwards;
 }
 #chefs .col-4 .texte:hover h6, #chefs .col-4 .texte:hover .h6 {
-  animation: chef2 0.5s forwards;
+  animation: deplacement 0.5s forwards;
 }
 #chefs .col-4 .texte:hover .logo {
-  animation: chef2 0.5s forwards 0.1s;
+  animation: deplacement 0.5s forwards 0.1s;
 }
 
-@keyframes chefs {
+@keyframes opacite {
   to {
     opacity: 1;
   }
 }
-@keyframes chef2 {
+@keyframes deplacement {
   to {
     transform: translateY(-10px);
     opacity: 1;

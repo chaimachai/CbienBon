@@ -144,12 +144,132 @@
                     <h2 class="text-warning mb-5">Check Our Tasty Menu</h2>
                 </div>
                 <div>
-                    <ul class="d-flex justify-content-center align-content-center flex-row column-gap-4">
-                        <li class="list-group-item c11"><a href="">All</a></li>
-                        <li class="list-group-item c22"><a href="">Starters</a></li>
-                        <li class="list-group-item c33"><a href="">Salads</a></li>
-                        <li class="list-group-item c44"><a href="">Specialty</a></li>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="All-tab" data-bs-toggle="tab" data-bs-target="#All" type="button"
+                                role="tab" aria-controls="All" aria-selected="true">All</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Starters-tab" data-bs-toggle="tab" data-bs-target="#Starters" type="button"
+                                role="tab" aria-controls="Starters" aria-selected="true">Starters</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Salads-tab" data-bs-toggle="tab" data-bs-target="#Salads" type="button"
+                                role="tab" aria-controls="Salads" aria-selected="false">Salads</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Speciality-tab" data-bs-toggle="tab" data-bs-target="#Speciality" type="button"
+                                role="tab" aria-controls="Speciality" aria-selected="false">Speciality</button>
+                        </li>
                     </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="All-tab">
+                            <div class="container row justify-content-start row-gap-4">
+                                <div class="col-6 d-flex justify-content-start align-items-center flex-row">
+                                    <div><img src="./public/img/menu/lobster-bisque.jpg" alt=""></div>
+                                    <div class="flex-column justify-content-start align-content-center">
+                                        <div class="d-flex justify-content-start align-content-center flex-row">
+                                            <p>Lobster Bisque</p>
+                                            <hr>
+                                            <p class="text-warning">$5.95</p>
+                                        </div>
+                                        <p>Lorem, deren, tratara, filede, nerada</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 d-flex justify-content-start align-items-center flex-row">
+                                    <div><img src="./public/img/menu/bread-barrel.jpg" alt=""></div>
+                                    <div class="flex-column justify-content-start align-content-center">
+                                        <div class="d-flex justify-content-start align-content-center flex-row">
+                                            <p>Bread Barrel</p>
+                                            <hr>
+                                            <p class="text-warning">$6.95</p>
+                                        </div>
+                                        <p>Lorem, deren, tratara, filede, nerada</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 d-flex justify-content-start align-items-center flex-row">
+                                    <div><img src="./public/img/menu/cake.jpg" alt=""></div>
+                                    <div class="flex-column justify-content-start align-content-center">
+                                        <div class="d-flex justify-content-start align-content-center flex-row">
+                                            <p>Crab Cake</p>
+                                            <hr>
+                                            <p class="text-warning">$7.95</p>
+                                        </div>
+                                        <p>A delicate crab cake served on a toasted roll with lettuce and tartar sauce</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 d-flex justify-content-start align-items-center flex-row">
+                                    <div><img src="./public/img/menu/caesar.jpg" alt=""></div>
+                                    <div class="flex-column justify-content-start align-content-center">
+                                        <div class="d-flex justify-content-start align-content-center flex-row">
+                                            <p>Ceaser Selections</p>
+                                            <hr>
+                                            <p class="text-warning">$8.95</p>
+                                        </div>
+                                        <p>Lorem, deren, tratara, filede, nerada</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 d-flex justify-content-start align-items-center flex-row">
+                                    <div><img src="./public/img/menu/tuscan-grilled.jpg" alt=""></div>
+                                    <div class="flex-column justify-content-start align-content-center">
+                                        <div class="d-flex justify-content-start align-content-center flex-row">
+                                            <p>Tuscan Grilled</p>
+                                            <hr>
+                                            <p class="text-warning">$9.95</p>
+                                        </div>
+                                        <p>Grilled chicken with provolone, artichoke hearts, and roasted red pesto</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 d-flex justify-content-start align-items-center flex-row">
+                                    <div><img src="./public/img/menu/mozzarella.jpg" alt=""></div>
+                                    <div class="flex-column justify-content-start align-content-center">
+                                        <div class="d-flex justify-content-start align-content-center flex-row">
+                                            <p>Mozzarella Stick</p>
+                                            <hr>
+                                            <p class="text-warning">$4.95</p>
+                                        </div>
+                                        <p>Lorem, deren, tratara, filede, nerada</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 d-flex justify-content-start align-items-center flex-row">
+                                    <div><img src="./public/img/menu/greek-salad.jpg" alt=""></div>
+                                    <div class="flex-column justify-content-start align-content-center">
+                                        <div class="d-flex justify-content-start align-content-center flex-row">
+                                            <p>Greek Salad</p>
+                                            <hr>
+                                            <p class="text-warning">$9.95</p>
+                                        </div>
+                                        <p>Fresh spinach, crisp romaine, tomatoes, and Greek olives</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 d-flex justify-content-start align-items-center flex-row">
+                                    <div><img src="./public/img/menu/spinach-salad.jpg" alt=""></div>
+                                    <div class="flex-column justify-content-start align-content-center">
+                                        <div class="d-flex justify-content-start align-content-center flex-row">
+                                            <p>Spinach Salad</p>
+                                            <hr>
+                                            <p class="text-warning">$9.95</p>
+                                        </div>
+                                        <p>Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 d-flex justify-content-start align-items-center flex-row">
+                                    <div><img src="./public/img/menu/lobster-roll.jpg" alt=""></div>
+                                    <div class="flex-column justify-content-start align-content-center">
+                                        <div class="d-flex justify-content-start align-content-center flex-row">
+                                            <p>Lobster Roll</p>
+                                            <hr>
+                                            <p class="text-warning">$12.95</p>
+                                        </div>
+                                        <p>Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="Starters" role="tabpanel" aria-labelledby="Starters-tab">Starters</div>
+                        <div class="tab-pane fade" id="Salads" role="tabpanel" aria-labelledby="Salads-tab">Salads</div>
+                        <div class="tab-pane fade" id="Speciality" role="tabpanel" aria-labelledby="Speciality-tab">Speciality</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -297,8 +417,7 @@
         <section id="chefs" class="bg-black text-light p-5">
             <div class="container">
                 <div>
-                    <p class="d-inline-block m-2">CHEFS
-                        <hr class="d-inline-block m-1">
+                    <p class="d-inline-block m-2">CHEFS <hr class="d-inline-block m-1">
                     </p>
                     <h2 class="text-warning mb-5">Our Proffesional Chefs</h2>
                 </div>
