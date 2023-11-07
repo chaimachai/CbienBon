@@ -10512,6 +10512,9 @@ header button:hover {
 #chefs .col-4 .texte .logo {
   opacity: 0;
 }
+#chefs .col-4 .texte .logo i {
+  margin: 0 0.2rem;
+}
 #chefs .col-4 .texte:hover {
   animation: chefs 0.5s forwards;
 }
