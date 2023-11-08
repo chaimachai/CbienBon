@@ -10534,16 +10534,16 @@ header button:hover {
     transform: scale(1.25);
   }
 }
-#chefs .col-4:nth-of-type(1) {
+#chefs .chef1:nth-of-type(1) {
   background-image: url("/../../../public/img/chefs/chefs-1.jpg");
 }
-#chefs .col-4:nth-of-type(2) {
+#chefs .chef1:nth-of-type(2) {
   background-image: url("/../../../public/img/chefs/chefs-2.jpg");
 }
-#chefs .col-4:nth-of-type(3) {
+#chefs .chef1:nth-of-type(3) {
   background-image: url("/../../../public/img/chefs/chefs-3.jpg");
 }
-#chefs .col-4 {
+#chefs .chef1 {
   width: 20vw;
   height: 50vh;
   display: flex;
@@ -10551,7 +10551,7 @@ header button:hover {
   align-items: flex-end;
   padding: 0;
 }
-#chefs .col-4 .texte {
+#chefs .chef1 .texte {
   background: linear-gradient(0deg, #111111 0%, rgba(0, 0, 0, 0.1) 100%);
   display: flex;
   justify-content: flex-end;
@@ -10561,22 +10561,22 @@ header button:hover {
   height: 100%;
   opacity: 0;
 }
-#chefs .col-4 .texte .logo {
+#chefs .chef1 .texte .logo {
   opacity: 0;
 }
-#chefs .col-4 .texte .logo i {
+#chefs .chef1 .texte .logo i {
   margin: 0 0.2rem;
 }
-#chefs .col-4 .texte:hover {
+#chefs .chef1 .texte:hover {
   animation: opacite 0.5s forwards;
 }
-#chefs .col-4 .texte:hover p {
+#chefs .chef1 .texte:hover p {
   animation: deplacement 0.5s forwards;
 }
-#chefs .col-4 .texte:hover h6, #chefs .col-4 .texte:hover .h6 {
+#chefs .chef1 .texte:hover h6, #chefs .chef1 .texte:hover .h6 {
   animation: deplacement 0.5s forwards;
 }
-#chefs .col-4 .texte:hover .logo {
+#chefs .chef1 .texte:hover .logo {
   animation: deplacement 0.5s forwards 0.1s;
 }
 
@@ -10589,6 +10589,11 @@ header button:hover {
   to {
     transform: translateY(-10px);
     opacity: 1;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .chef1 {
+    width: 40vw;
   }
 }
 #contact input, #contact textarea {
