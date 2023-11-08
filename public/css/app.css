@@ -10440,7 +10440,15 @@ header button:hover {
   background-color: rgb(26, 24, 20);
 }
 #menu .nav-tabs .active {
-  color: rgb(205, 164, 94) !important;
+  color: rgb(205, 164, 94);
+  border: none;
+}
+#menu ul {
+  margin-bottom: 4rem;
+  border: none;
+}
+#menu li {
+  border: none;
 }
 
 #events {
@@ -10474,7 +10482,7 @@ header button:hover {
   background-color: rgb(12, 11, 9) !important;
 }
 
-#gallery .col-3 {
+#gallery .col {
   background-position: center;
 }
 #gallery .anim {
@@ -10483,7 +10491,11 @@ header button:hover {
   margin: 0;
   padding: 0;
 }
-#gallery .col-3:hover {
+#gallery .anim div {
+  padding: 0;
+  margin: 0;
+}
+#gallery .col:hover {
   animation: images 2s forwards;
 }
 
@@ -10578,6 +10590,28 @@ header button:hover {
 }
 #contact iframe {
   width: 100%;
+}
+
+footer .footer1 {
+  border-top: 1px solid rgb(56, 51, 42);
+  border-bottom: 1px solid rgb(56, 51, 42);
+}
+footer p {
+  margin: 0;
+}
+footer .logof div {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .logof div i {
+  font-size: 1rem;
+}
+footer .copy {
+  background-color: rgb(0, 0, 0) !important;
 }
 
 body hr {
