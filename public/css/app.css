@@ -10433,6 +10433,7 @@ header button:hover {
 }
 #menu .col-6 hr {
   border-top: 1px dashed white;
+  width: 100%;
 }
 #menu button {
   color: white;
@@ -10480,6 +10481,35 @@ header button:hover {
 }
 #book button:hover {
   background-color: rgb(12, 11, 9) !important;
+}
+
+.monials .carousel-indicators {
+  margin-bottom: -50px;
+}
+.monials .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.monials .carousel-indicators .active {
+  background-color: rgb(205, 164, 94) !important;
+}
+.monials .texte {
+  background-color: rgb(39, 35, 29);
+  padding-bottom: 4rem !important;
+}
+.monials .img {
+  margin-left: 2rem;
+}
+.monials .img div {
+  margin-top: 3rem;
+}
+.monials img {
+  border: 5px solid rgba(72, 70, 68, 0.7);
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  bottom: 6rem;
 }
 
 #gallery .col {
