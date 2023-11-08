@@ -8,9 +8,21 @@
         border: 4px solid rgb(59,57,54)
     img:hover
         animation: image_about 1s forwards
-    @keyframes image_about
-        to
-            width: 32vw
+    .carre1, .carre2
+        border-bottom: 1px solid $warning
+        width: 6rem
+        height: 6rem
+    .carre1
+        border-left: 1px solid $warning
+    .carre2
+        border-right: 1px solid $warning
+.btn_abs
+    width: 2rem
+    height: 2rem
+
+@keyframes image_about
+    to
+        width: 32vw
 @media screen and (max-width:991px)
     #about
         img

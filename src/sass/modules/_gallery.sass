@@ -1,6 +1,11 @@
 #gallery
     .col
         background-position: center
+        // width: 20rem
+        // height: 20rem
+        width: 24vw
+        height: 40vh
+
     .anim
         overflow: hidden
         width: 24vw
@@ -14,3 +19,7 @@
 @keyframes images
     to
         transform: scale(1.25)
+@media screen and (min-width:577px) and (max-width:768px)
+    #gallery
+        .col
+            width: 33vw
