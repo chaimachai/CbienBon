@@ -10595,6 +10595,7 @@ header button:hover {
 footer .footer1 {
   border-top: 1px solid rgb(56, 51, 42);
   border-bottom: 1px solid rgb(56, 51, 42);
+  padding: 5rem 10rem;
 }
 footer p {
   margin: 0;
@@ -10609,6 +10610,26 @@ footer .logof div {
 }
 footer .logof div i {
   font-size: 1rem;
+}
+footer .btn-footer {
+  position: relative;
+  width: fit-content;
+}
+footer .btn-footer .input1 {
+  border: rgb(71, 66, 55) 1px solid;
+  width: 20rem;
+  background-color: rgb(41, 37, 31);
+}
+footer .btn-footer .input2 {
+  position: absolute;
+  right: 0;
+  border: rgb(205, 164, 94) 1px solid;
+}
+footer .btn-footer .input1:focus {
+  color: rgb(205, 164, 94) !important;
+}
+footer .btn-footer .input2:hover {
+  background-color: rgb(12, 11, 9) !important;
 }
 footer .copy {
   background-color: rgb(0, 0, 0) !important;
