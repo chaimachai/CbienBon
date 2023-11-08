@@ -10417,6 +10417,12 @@ header button:hover {
   }
 }
 
+@media screen and (max-width: 991px) {
+  #about img {
+    width: 80vw;
+    margin-bottom: 2rem;
+  }
+}
 .why_us .card.bg-info:hover, .why_us .card.bg-info:hover .card-title {
   color: white !important;
   background-color: rgb(205, 164, 94) !important;
