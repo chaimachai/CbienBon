@@ -1,19 +1,10 @@
 #chefs
-    .chef1:nth-of-type(1)
-        background-image: url('/../../../public/img/chefs/chefs-1.jpg')
-    .chef1:nth-of-type(2)
-        background-image: url('/../../../public/img/chefs/chefs-2.jpg')
-    .chef1:nth-of-type(3)
-        background-image: url('/../../../public/img/chefs/chefs-3.jpg')
     .chef1
-        width: 24rem
-        height: 30rem
-        margin: 1rem
-        display: flex
-        justify-content: center
-        align-items: flex-end
-        padding: 0
-        background-size: cover
+        padding: 1rem
+        .img_chef
+            position: relative
+        img
+            width: 100%
         .texte
             background: linear-gradient(0deg, #111111 0%, rgba(0, 0, 0, 0.1) 100%)
             display: flex
@@ -23,6 +14,8 @@
             width: 100%
             height: 100%
             opacity: 0
+            position: absolute
+            top: 0
             .logo
                 opacity: 0
                 i
@@ -43,8 +36,3 @@
     to
         transform: translateY(-10px)
         opacity: 1
-
-// @media screen and (max-width:991px)
-//     .chef1
-//         width: 50%
-//         margin: 0

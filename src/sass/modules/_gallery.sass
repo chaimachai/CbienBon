@@ -1,23 +1,13 @@
 #gallery
-    .col
-        background-position: center
-        width: 24vw
-        height: 40vh
-
     .anim
         overflow: hidden
-        width: 24vw
-        margin: 0
-        padding: 0
-        div
-            padding: 0
-            margin: 0
-    .col:hover
-        animation: images 2s forwards
+        max-height: 24rem
+        margin: 0 !important
+        padding: 0 !important
+    .anim
+        img:hover
+            animation: images 2s forwards
 @keyframes images
     to
         transform: scale(1.25)
-@media screen and (min-width:577px) and (max-width:768px)
-    #gallery
-        .col
-            width: 33vw
+

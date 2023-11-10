@@ -5,8 +5,8 @@ header
         background-color: rgba(0,0,0, 0.7)
         height: 100%
     .div_label
-        width: 7rem
-        height: 7rem
+        width: 5rem
+        height: 5rem
         border-radius: 50%
         background-color: rgba(205,164,94,0.2)
         overflow: hidden
@@ -14,15 +14,25 @@ header
         justify-content: center !important
         align-items: center !important
     #label
-        width: 6rem
-        height: 6rem
+        width: 4rem
+        height: 4rem
         border-radius: 50%
         display: flex
         justify-content: center
         align-items: center
-        font-size: 4rem
+        font-size: 2rem
         .fa-play
             color: white
+    .btn_head
+        button
+            margin: 0.2rem
+            height: 2rem
+            width: fit-content
+            padding: 1rem
+            padding-top: 0
+            padding-bottom: 0
+        button:hover
+            background-color: $warning !important
     #label:hover .fa-play
         animation: label_header 1s
     input
@@ -38,13 +48,11 @@ header
             position: absolute
             top: 0
             right: 0
-            font-size: 2rem
+            font-size: 1rem
     #video:checked + .filtre
         display: flex !important
         justify-content: center
         align-items: center
-    button:hover
-        background-color: $warning !important
 
 @keyframes label_header
     to

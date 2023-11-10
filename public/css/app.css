@@ -10344,8 +10344,8 @@ header .filtre1 {
   height: 100%;
 }
 header .div_label {
-  width: 7rem;
-  height: 7rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   background-color: rgba(205, 164, 94, 0.2);
   overflow: hidden;
@@ -10354,16 +10354,27 @@ header .div_label {
   align-items: center !important;
 }
 header #label {
-  width: 6rem;
-  height: 6rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 header #label .fa-play {
   color: white;
+}
+header .btn_head button {
+  margin: 0.2rem;
+  height: 2rem;
+  width: fit-content;
+  padding: 1rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+header .btn_head button:hover {
+  background-color: rgb(205, 164, 94) !important;
 }
 header #label:hover .fa-play {
   animation: label_header 1s;
@@ -10383,15 +10394,12 @@ header .filtre label {
   position: absolute;
   top: 0;
   right: 0;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 header #video:checked + .filtre {
   display: flex !important;
   justify-content: center;
   align-items: center;
-}
-header button:hover {
-  background-color: rgb(205, 164, 94) !important;
 }
 
 @keyframes label_header {
@@ -10428,7 +10436,7 @@ header button:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
 #about img {
-  width: 30vw;
+  width: 100%;
   border: 4px solid rgb(59, 57, 54);
 }
 #about img:hover {
@@ -10442,6 +10450,9 @@ header button:hover {
 }
 #about .img_abos {
   position: relative;
+  height: fit-content;
+  padding: 0;
+  background-color: red;
 }
 #about .carre1, #about .carre2 {
   width: 2rem;
@@ -10449,51 +10460,56 @@ header button:hover {
   position: absolute;
 }
 #about .carre1 {
-  border-top: 4px solid rgb(205, 164, 94);
-  border-left: 4px solid rgb(205, 164, 94);
+  border-top: 3px solid rgb(205, 164, 94);
+  border-left: 3px solid rgb(205, 164, 94);
   top: 1rem;
-  left: 2rem;
+  left: 1rem;
 }
 #about .carre2 {
-  border-bottom: 4px solid rgb(205, 164, 94);
-  border-right: 4px solid rgb(205, 164, 94);
+  border-bottom: 3px solid rgb(205, 164, 94);
+  border-right: 3px solid rgb(205, 164, 94);
   bottom: 1rem;
-  right: 5rem;
+  right: 1rem;
 }
 
 .btn_abs {
   width: 2rem;
   height: 2rem;
+  position: fixed;
+  bottom: 2vh;
+  right: 2vw;
 }
 
 @keyframes image_about {
   to {
-    width: 32vw;
+    transform: scale(1.02);
   }
 }
 @keyframes mv_carre1 {
   to {
     top: 0.5rem;
-    left: 1.25rem;
+    left: 0.5rem;
   }
 }
 @keyframes mv_carre2 {
   to {
     bottom: 0.5rem;
-    right: 1.75rem;
-  }
-}
-@media screen and (max-width: 991px) {
-  #about img {
-    width: 80vw;
-    margin-bottom: 2rem;
+    right: 0.5rem;
   }
 }
 .why_us .card.bg-info:hover, .why_us .card.bg-info:hover .card-title {
   color: white !important;
   background-color: rgb(205, 164, 94) !important;
 }
+.why_us .card.bg-info:hover .card-body {
+  animation: cards_why 0.2s forwards;
+}
 
+@keyframes cards_why {
+  to {
+    padding-top: 0;
+  }
+}
 #menu .col-lg-6 .poppins {
   color: rgb(141, 140, 138);
 }
@@ -10589,22 +10605,13 @@ header button:hover {
   bottom: 6rem;
 }
 
-#gallery .col {
-  background-position: center;
-  width: 24vw;
-  height: 40vh;
-}
 #gallery .anim {
   overflow: hidden;
-  width: 24vw;
-  margin: 0;
-  padding: 0;
+  max-height: 24rem;
+  margin: 0 !important;
+  padding: 0 !important;
 }
-#gallery .anim div {
-  padding: 0;
-  margin: 0;
-}
-#gallery .col:hover {
+#gallery .anim img:hover {
   animation: images 2s forwards;
 }
 
@@ -10613,29 +10620,14 @@ header button:hover {
     transform: scale(1.25);
   }
 }
-@media screen and (min-width: 577px) and (max-width: 768px) {
-  #gallery .col {
-    width: 33vw;
-  }
-}
-#chefs .chef1:nth-of-type(1) {
-  background-image: url("/../../../public/img/chefs/chefs-1.jpg");
-}
-#chefs .chef1:nth-of-type(2) {
-  background-image: url("/../../../public/img/chefs/chefs-2.jpg");
-}
-#chefs .chef1:nth-of-type(3) {
-  background-image: url("/../../../public/img/chefs/chefs-3.jpg");
-}
 #chefs .chef1 {
-  width: 24rem;
-  height: 30rem;
-  margin: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 0;
-  background-size: cover;
+  padding: 1rem;
+}
+#chefs .chef1 .img_chef {
+  position: relative;
+}
+#chefs .chef1 img {
+  width: 100%;
 }
 #chefs .chef1 .texte {
   background: linear-gradient(0deg, #111111 0%, rgba(0, 0, 0, 0.1) 100%);
@@ -10646,6 +10638,8 @@ header button:hover {
   width: 100%;
   height: 100%;
   opacity: 0;
+  position: absolute;
+  top: 0;
 }
 #chefs .chef1 .texte .logo {
   opacity: 0;
@@ -10749,13 +10743,20 @@ footer .btn-footer .input1:focus {
   color: rgb(205, 164, 94) !important;
 }
 footer .btn-footer .input2:hover {
-  background-color: rgb(12, 11, 9) !important;
+  background-color: rgb(41, 37, 31) !important;
+  border: rgb(71, 66, 55) 1px solid;
+  border-top: none;
+  border-bottom: none;
+  color: rgb(205, 164, 94) !important;
 }
 footer .copy {
   background-color: rgb(0, 0, 0) !important;
 }
 
 body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-family: "Open Sans", sans-serif;
 }
 body .titre p {
