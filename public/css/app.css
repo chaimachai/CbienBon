@@ -10722,8 +10722,11 @@ footer .logof div {
   justify-content: center;
   align-items: center;
 }
-footer .logof div i {
+footer .logof div a {
   font-size: 1rem;
+}
+footer .logof div:hover {
+  background-color: rgb(205, 164, 94) !important;
 }
 footer .btn-footer {
   position: relative;
