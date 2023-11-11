@@ -25,13 +25,18 @@
         border: none
     li
         border: none
-    .tab-pane
-        // transform: translateZ(200px)
-        // position: relative
-    .tab-pane.show
-        // transform:translateZ(200px)
-        // animation: menu_ 2s forwards
-// @keyframes menu_
-//     to
-//         transform: translateX(2rem)
+    .tab-pane.fade .droite
+        transition: all 0.01s 
+        opacity: 0
+        transform: translate(20rem,-2rem) scale(0.2)
+    .tab-pane.fade .gauche
+        transition: all 0.01s 
+        opacity: 0
+        transform: translate(-20rem,2rem) scale(0.2)
+    .tab-pane.fade.show .gauche,.tab-pane.fade.show .droite
+        animation: menu_ 1s forwards
 
+@keyframes menu_
+    to
+        opacity: 1
+        transform: translate(0,0) scale(1) skew(0)
