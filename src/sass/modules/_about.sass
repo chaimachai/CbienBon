@@ -6,43 +6,41 @@
     img
         width: 100%
         border: 4px solid rgb(59,57,54)
-    img:hover
+    .img_abos
+        position: relative
+        height: fit-content
+        padding: 0
+    .carre1, .carre2
+        width: 3rem
+        height: 3rem
+        position: absolute
+    .carre1
+        border-top: 4px solid $warning
+        border-left: 4px solid $warning
+        top: 1rem
+        left: 1rem
+    .carre2
+        border-bottom: 4px solid $warning
+        border-right: 4px solid $warning
+        bottom: 1rem
+        right: 1rem
+    .img_abos:hover
         animation: image_about 1s forwards
     .img_abos:hover .carre1
         animation: mv_carre1 1s forwards
     .img_abos:hover .carre2
         animation: mv_carre2 1s forwards
-    .img_abos
-        position: relative
-        // width: 100%
-        height: fit-content
-        padding: 0
-        background-color: red
-
-    .carre1, .carre2
-        width: 2rem
-        height: 2rem
-        position: absolute
-    .carre1
-        border-top: 3px solid $warning
-        border-left: 3px solid $warning
-        top: 1rem
-        left: 1rem
-    .carre2
-        border-bottom: 3px solid $warning
-        border-right: 3px solid $warning
-        bottom: 1rem
-        right: 1rem
 .btn_abs
     width: 2rem
     height: 2rem
     position: fixed
     bottom: 2vh
     right: 2vw
+    z-index: 1 !important
 
 @keyframes image_about
     to
-        transform: scale(1.02)
+        transform: scale(1.04)
 @keyframes mv_carre1
     to
         top: 0.5rem

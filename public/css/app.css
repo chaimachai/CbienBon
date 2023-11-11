@@ -10337,6 +10337,8 @@ nav button a:hover {
 
 header {
   background-image: url("/../../../public/img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
 }
 header .filtre1 {
@@ -10344,22 +10346,13 @@ header .filtre1 {
   height: 100%;
 }
 header .div_label {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
+  width: 100px;
+  height: 100px;
   background-color: rgba(205, 164, 94, 0.2);
-  overflow: hidden;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
 }
 header #label {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 80px;
+  height: 80px;
   font-size: 2rem;
 }
 header #label .fa-play {
@@ -10370,8 +10363,6 @@ header .btn_head button {
   height: 2rem;
   width: fit-content;
   padding: 1rem;
-  padding-top: 0;
-  padding-bottom: 0;
 }
 header .btn_head button:hover {
   background-color: rgb(205, 164, 94) !important;
@@ -10425,7 +10416,7 @@ header #video:checked + .filtre {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
   }
 }
 #about {
@@ -10439,7 +10430,29 @@ header #video:checked + .filtre {
   width: 100%;
   border: 4px solid rgb(59, 57, 54);
 }
-#about img:hover {
+#about .img_abos {
+  position: relative;
+  height: fit-content;
+  padding: 0;
+}
+#about .carre1, #about .carre2 {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+}
+#about .carre1 {
+  border-top: 4px solid rgb(205, 164, 94);
+  border-left: 4px solid rgb(205, 164, 94);
+  top: 1rem;
+  left: 1rem;
+}
+#about .carre2 {
+  border-bottom: 4px solid rgb(205, 164, 94);
+  border-right: 4px solid rgb(205, 164, 94);
+  bottom: 1rem;
+  right: 1rem;
+}
+#about .img_abos:hover {
   animation: image_about 1s forwards;
 }
 #about .img_abos:hover .carre1 {
@@ -10448,29 +10461,6 @@ header #video:checked + .filtre {
 #about .img_abos:hover .carre2 {
   animation: mv_carre2 1s forwards;
 }
-#about .img_abos {
-  position: relative;
-  height: fit-content;
-  padding: 0;
-  background-color: red;
-}
-#about .carre1, #about .carre2 {
-  width: 2rem;
-  height: 2rem;
-  position: absolute;
-}
-#about .carre1 {
-  border-top: 3px solid rgb(205, 164, 94);
-  border-left: 3px solid rgb(205, 164, 94);
-  top: 1rem;
-  left: 1rem;
-}
-#about .carre2 {
-  border-bottom: 3px solid rgb(205, 164, 94);
-  border-right: 3px solid rgb(205, 164, 94);
-  bottom: 1rem;
-  right: 1rem;
-}
 
 .btn_abs {
   width: 2rem;
@@ -10478,11 +10468,12 @@ header #video:checked + .filtre {
   position: fixed;
   bottom: 2vh;
   right: 2vw;
+  z-index: 1 !important;
 }
 
 @keyframes image_about {
   to {
-    transform: scale(1.02);
+    transform: scale(1.04);
   }
 }
 @keyframes mv_carre1 {
@@ -10543,7 +10534,6 @@ header #video:checked + .filtre {
 #menu li {
   border: none;
 }
-
 #events {
   background-image: url("/../../../public/img/events-bg.jpg");
   background-attachment: fixed;
@@ -10610,12 +10600,17 @@ header #video:checked + .filtre {
   max-height: 24rem;
   margin: 0 !important;
   padding: 0 !important;
+  border-right: 2px solid rgb(69, 64, 53);
+  border-bottom: 2px solid rgb(69, 64, 53);
+}
+#gallery .anim img {
+  width: 100%;
 }
 #gallery .anim img:hover {
-  animation: images 2s forwards;
+  animation: img_gallery 2s forwards;
 }
 
-@keyframes images {
+@keyframes img_gallery {
   to {
     transform: scale(1.25);
   }
@@ -10648,24 +10643,24 @@ header #video:checked + .filtre {
   margin: 0 0.2rem;
 }
 #chefs .chef1 .texte:hover {
-  animation: opacite 0.5s forwards;
+  animation: opacite_texte_chef 0.5s forwards;
 }
 #chefs .chef1 .texte:hover p {
-  animation: deplacement 0.5s forwards;
+  animation: deplacement_texte_chef 0.5s forwards;
 }
 #chefs .chef1 .texte:hover h6, #chefs .chef1 .texte:hover .h6 {
-  animation: deplacement 0.5s forwards;
+  animation: deplacement_texte_chef 0.5s forwards;
 }
 #chefs .chef1 .texte:hover .logo {
-  animation: deplacement 0.5s forwards 0.1s;
+  animation: deplacement_texte_chef 0.5s forwards 0.1s;
 }
 
-@keyframes opacite {
+@keyframes opacite_texte_chef {
   to {
     opacity: 1;
   }
 }
-@keyframes deplacement {
+@keyframes deplacement_texte_chef {
   to {
     transform: translateY(-10px);
     opacity: 1;
@@ -10675,19 +10670,9 @@ header #video:checked + .filtre {
   border: rgb(71, 66, 55) 1px solid;
   width: 100%;
 }
-#contact input:focus, #contact textarea:focus {
-  color: rgb(205, 164, 94) !important;
-}
-#contact button:hover {
-  background-color: rgb(12, 11, 9) !important;
-}
 #contact .font {
   width: 2rem;
   height: 2rem;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 #contact .font i {
   font-size: 1rem;
@@ -10695,12 +10680,29 @@ header #video:checked + .filtre {
 #contact .font + div {
   margin: 1rem;
 }
+#contact .font + div a {
+  margin: 0;
+  margin-left: 1rem;
+  font-weight: bolder;
+}
 #contact .font + div p {
   margin: 0;
   margin-left: 1rem;
+  color: rgb(186, 179, 167);
 }
 #contact iframe {
   width: 100%;
+}
+#contact .font:hover {
+  background-color: rgb(12, 11, 9) !important;
+  color: rgb(205, 164, 94);
+  border: 1px solid rgb(205, 164, 94);
+}
+#contact input:focus, #contact textarea:focus {
+  color: rgb(205, 164, 94) !important;
+}
+#contact button:hover {
+  background-color: rgb(12, 11, 9) !important;
 }
 
 footer .footer1 {
@@ -10710,17 +10712,19 @@ footer .footer1 {
 footer h2, footer .h2 {
   width: fit-content;
 }
-footer p {
+footer p, footer a {
   width: fit-content;
   margin: 0;
+}
+footer .contact_footer {
+  font-weight: bolder;
+}
+footer .contact_footer span {
+  font-weight: lighter;
 }
 footer .logof div {
   width: 2rem;
   height: 2rem;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 footer .logof div a {
   font-size: 1rem;
@@ -10762,11 +10766,12 @@ body {
   padding: 0;
   font-family: "Open Sans", sans-serif;
 }
-body .titre p {
+body .titre h2, body .titre .h2 {
   font-family: "Playfair Display", sans-serif;
 }
-body .titre h2, body .titre .h2 {
+body .titre p {
   font-family: "Poppins", sans-serif;
+  color: rgb(170, 170, 170);
 }
 body .titre hr {
   width: 10rem;
