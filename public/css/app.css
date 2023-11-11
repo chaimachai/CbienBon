@@ -10349,6 +10349,13 @@ header .div_label {
   width: 100px;
   height: 100px;
   background-color: rgba(205, 164, 94, 0.2);
+  padding: 0;
+}
+header .div_label .cercle {
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgba(205, 164, 94, 0.5);
+  animation: cercle_header 1s infinite alternate-reverse;
 }
 header #label {
   width: 80px;
@@ -10360,9 +10367,8 @@ header #label .fa-play {
 }
 header .btn_head button {
   margin: 0.2rem;
-  height: 2rem;
+  height: fit-content;
   width: fit-content;
-  padding: 1rem;
 }
 header .btn_head button:hover {
   background-color: rgb(205, 164, 94) !important;
@@ -10397,6 +10403,12 @@ header #video:checked + .filtre {
   to {
     font-size: 20rem;
     color: rgb(205, 164, 94);
+  }
+}
+@keyframes cercle_header {
+  to {
+    width: 100px;
+    height: 100px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -10540,7 +10552,7 @@ header #video:checked + .filtre {
   box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.8);
 }
 #events .carousel-indicators {
-  margin-bottom: -50px;
+  margin-bottom: -35px;
 }
 #events .carousel-indicators button {
   width: 10px;
@@ -10567,7 +10579,7 @@ header #video:checked + .filtre {
 }
 
 .monials .carousel-indicators {
-  margin-bottom: -50px;
+  margin-bottom: -20px;
 }
 .monials .carousel-indicators button {
   width: 10px;

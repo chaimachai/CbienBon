@@ -10,6 +10,12 @@ header
         width: 100px
         height: 100px
         background-color: rgba(205,164,94,0.2)
+        padding: 0
+        .cercle
+            width: 80px
+            height: 80px
+            border: 1px solid rgba(205,164,94,0.5)
+            animation: cercle_header 1s infinite alternate-reverse
     #label
         width: 80px
         height: 80px
@@ -19,9 +25,8 @@ header
     .btn_head
         button
             margin: 0.2rem
-            height: 2rem
+            height: fit-content
             width: fit-content
-            padding: 1rem
         button:hover
             background-color: $warning !important
     #label:hover .fa-play
@@ -45,10 +50,15 @@ header
         justify-content: center
         align-items: center
 
+
 @keyframes label_header
     to
         font-size: 20rem
         color: $warning
+@keyframes cercle_header
+    to
+        width: 100px
+        height: 100px
 @media screen and (max-width:991px)
     header
         .div_head
