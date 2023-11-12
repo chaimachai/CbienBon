@@ -7,6 +7,9 @@ header
         z-index: 2 
         width: 100%
         height: 100%
+    .text_head
+        h5
+            color: rgb(206,206,206) !important
     .filtre1
         background-color: rgba(0,0,0, 0.7)
         height: 100%
@@ -33,7 +36,7 @@ header
         button:hover
             background-color: $warning !important
     #label:hover .fa-play
-        animation: label_header 1s
+        animation: label_header 0.5s 2 alternate
     input
         display: none
     .filtre
@@ -58,7 +61,7 @@ header
 
 @keyframes label_header
     to
-        font-size: 20rem
+        font-size: 15rem
         color: $warning
 @keyframes cercle_header
     to

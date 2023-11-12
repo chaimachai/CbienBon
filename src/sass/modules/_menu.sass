@@ -13,30 +13,31 @@
         hr
             border-top: 1px dashed white
             width: 100%
-    button 
+    .nav-link 
         color: white
         border: none
         background-color: $info
+    .nav-link .active
+        border: none
     .nav-tabs .active
         color: $warning
         border: none
-    ul
+    .nav-tabs
         margin-bottom: 4rem
         border: none
-    li
+    .nav-item
         border: none
     .tab-pane.fade .droite
-        transition: all 0.01s 
+        transition: all 1s 
         opacity: 0
         transform: translate(20rem,-2rem) scale(0.2)
     .tab-pane.fade .gauche
-        transition: all 0.01s 
+        transition: all 1s 
         opacity: 0
         transform: translate(-20rem,2rem) scale(0.2)
     .tab-pane.fade.show .gauche,.tab-pane.fade.show .droite
         animation: menu_ 1s forwards
-
 @keyframes menu_
     to
         opacity: 1
-        transform: translate(0,0) scale(1) skew(0)
+        transform: translate(0,0) scale(1)
